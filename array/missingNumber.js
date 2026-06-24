@@ -1,0 +1,12 @@
+var missingNumber = function(nums) {
+    let n = nums.length
+    let sum =0
+    let total = (n *(n+1))/2
+    for(i=0; i<n;i++){
+        sum = sum+nums[i]
+    }
+    return total - sum
+};
+
+// TC = O(n)
+// SC = O(1)
